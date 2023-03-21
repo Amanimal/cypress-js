@@ -1,4 +1,4 @@
-# Cypress Setup Guide for Windows
+# Cypress Setup Guide for Windows OS
 
 ### Prerequisites
 - Node.js 
