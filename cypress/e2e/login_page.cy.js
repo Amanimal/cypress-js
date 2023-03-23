@@ -149,7 +149,7 @@ describe('Login Page', () => {
     // tc-46
     cy.get('a:contains("Logout")').should('have.text', 'Logout')
 
-    // tc-47
+    // tc-47 TODO: TypeError needs to be fixed
     // cy.get('a:contains("Logout")').click()
 
     // tc-48
