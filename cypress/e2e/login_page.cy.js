@@ -1,7 +1,10 @@
 describe('Login Page', () => {
-  it('Logo and Title', () => {
-    cy.visit('/')
 
+  beforeEach(() => {
+    cy.visit('/')
+  })
+
+  it('Logo and Title', () => {
     // tc-1
     cy.get('img[alt="company-branding"]').should('have.attr', 'alt', 'company-branding').then(() => {
       cy.log('Orange hrm image alt value is correct. Value: "company-branding"')
@@ -60,8 +63,6 @@ describe('Login Page', () => {
     cy.get('a[href="https://www.youtube.com/c/OrangeHRMInc"]').should('be.visible')
   })
   it('Incorrect Login', () => {
-    cy.visit('/')
-
     // tc-19
     cy.get('input[placeholder="Username"]').type('testuser')
 
@@ -69,18 +70,89 @@ describe('Login Page', () => {
     cy.get('input[placeholder="Username"]').should('have.value', 'testuser')
 
     // tc-21
+    cy.get('input[placeholder="Password"]').type(Cypress.env('password'))
+
     // tc-22
+    cy.get('input[placeholder="Password"]').should('have.value', Cypress.env('password'))
+
     // tc-23
+    cy.get('button:contains(" Login ")').click()
+
     // tc-24
+    cy.get('p:contains("Invalid credentials")').should('have.text', 'Invalid credentials')
+
     // tc-25
+    cy.get('input[placeholder="Username"]').clear()
+    cy.get('input[placeholder="Password"]').clear()
+
     // tc-26
+    cy.get('input[placeholder="Username"]').type(Cypress.env('username'))
+
     // tc-27
+    cy.get('input[placeholder="Username"]').should('have.value', Cypress.env('username'))
+
     // tc-28
+    cy.get('input[placeholder="Password"]').type('testpassword')
+
     // tc-29
+    cy.get('input[placeholder="Password"]').should('have.value', 'testpassword')
+
     // tc-30
+    cy.get('button:contains(" Login ")').click()
+
     // tc-31
+    cy.get('p:contains("Invalid credentials")').should('have.text', 'Invalid credentials')
   })
-  // it('Login and Logout', () => {
-  //   cy.visit('/')
-  // })
+  it('Login and Logout', () => {
+    // tc-32
+    cy.get('input[placeholder="Username"]').type(Cypress.env('username'))
+
+    // tc-33
+    cy.get('input[placeholder="Username"]').should('have.value', Cypress.env('username'))
+
+    // tc-34
+    cy.get('input[placeholder="Password"]').type(Cypress.env('password'))
+
+    // tc-35
+    cy.get('input[placeholder="Password"]').should('have.value', Cypress.env('password'))
+
+    // tc-36
+    cy.get('button:contains(" Login ")').click()
+
+    // tc-37
+    cy.get('h6:contains("Dashboard")').should('have.text', 'Dashboard')
+
+    // tc-38
+    cy.get('span[class="oxd-userdropdown-tab"]').should('be.visible')
+
+    // tc-39
+    cy.get('img[class="oxd-userdropdown-img"]').should('be.visible')
+
+    // tc-40
+    cy.get('p[class="oxd-userdropdown-name"]').should('be.visible')
+
+    // tc-41
+    cy.get('span[class="oxd-userdropdown-tab"]').click()
+
+    // tc-42
+    cy.get('ul[role="menu"]').should('be.visible')
+
+    // tc-43
+    cy.get('a:contains("About")').should('have.text', 'About')
+
+    // tc-44
+    cy.get('a:contains("Support")').should('have.text', 'Support')
+
+    // tc-45
+    cy.get('a:contains("Change Password")').should('have.text', 'Change Password')
+
+    // tc-46
+    cy.get('a:contains("Logout")').should('have.text', 'Logout')
+
+    // tc-47
+    // cy.get('a:contains("Logout")').click()
+
+    // tc-48
+    // cy.get('h5:contains("Login")').should('have.text', 'Login').wait(1000)
+  })
 })
