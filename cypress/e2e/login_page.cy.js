@@ -6,9 +6,7 @@ describe('Login Page', () => {
 
   it('Logo and Title', () => {
     // tc-1
-    cy.get('img[alt="company-branding"]').should('have.attr', 'alt', 'company-branding').then(() => {
-      cy.log('Orange hrm image alt value is correct. Value: "company-branding"')
-    })
+    cy.get('img[alt="company-branding"]').should('have.attr', 'alt', 'company-branding')
 
     // tc-2
     cy.get('h5:contains("Login")').should('have.text', 'Login')
