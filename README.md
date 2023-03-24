@@ -80,7 +80,6 @@ Use the information below to learn how to run this project.
    ````
    npx cypress run --spec .\cypress\e2e
    ````
-**NOTE**: By default, Cypress run will launch Chrome in headless mode <br>
 4. Run on a specific browser: <br>
    a. Check browsers available on the current operating system:
    ````
@@ -91,6 +90,7 @@ Use the information below to learn how to run this project.
    npx cypress run --spec .\cypress\e2e\login_page.cy.js --browser edge
    ````
 **NOTE**: 
+* By default, Cypress run will launch Chrome in headless mode
 * ```chrome```,```edge```, ```electron```arguments is supported on ```--browser``` flag.
 * Cypress does not support running tests on Safari.
 * Cypress does not support Firefox or Opera out of the box, but plugins can be installed to enable running tests on these browsers.
