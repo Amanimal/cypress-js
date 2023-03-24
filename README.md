@@ -42,7 +42,7 @@ Here gives you instructions on setting up your project locally.
    b. ```\cypress\screenshots``` directory, contains screenshots of each failed test case <br/>
    c. ```\cypress\videos``` directory, contains videos of each test run 
 
-Note: Cypress run in headless mode, will automatically create ```\screenshots``` and ```\videos``` directories
+**NOTE**: Cypress run in headless mode, will automatically create ```\screenshots``` and ```\videos``` directories
 
 ## Usage
 
@@ -64,7 +64,7 @@ Use the information below to learn how to run this project.
    #### This will run the selected ```.cy.js``` on a Chrome instance
    ![cy-test-runner4][cy-test-runner4]
 
-**NOTE**: While running this browser instance, test scripts can be modified using a code editor or an IDE.
+**NOTE**: While running this browser instance, test scripts can be modified using a code editor or an IDE, simultaneously.
 
 ### Option 2: Run using Terminal - Command Prompt or Powershell
 
