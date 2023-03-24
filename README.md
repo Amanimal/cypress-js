@@ -80,7 +80,7 @@ Use the information below to learn how to run this project.
    ````
    npx cypress run --spec .\cypress\e2e
    ````
-**NOTE**: By default, Cypress run will launch Chrome in headless mode
+**NOTE**: By default, Cypress run will launch Chrome in headless mode <br>
 4. Run on a specific browser: <br>
    a. Check browsers available on the current operating system:
    ````
