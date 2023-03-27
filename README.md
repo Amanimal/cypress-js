@@ -138,9 +138,9 @@ Use the information below to learn how to run this project.
    cypress run --browser opera
    ````
 
-### Option 3: Run the ```run-all-tests.js``` file
+### Option 3: Run the Test Suite
 
-Run all tests, using terminal:
+Run the test suite, using terminal:
    ````
    node run-all-tests.js
    ````
