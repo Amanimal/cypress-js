@@ -138,19 +138,17 @@ Use the information below to learn how to run this project.
    cypress run --browser opera
    ````
 
-### Option 3: Run the ```TestSuit.py``` file
+### Option 3: Run the ```run-all-tests.js``` file
 
-Run all tests: By clicking run ```▶```
+Run all tests, using terminal:
    ````
-   if __name__ == '__main__':
-      BASE_DIR = os.getcwd()
-      ...
+   node run-all-tests.js
    ````
-In the ```TestSuit.py``` file, specify which browser to run:
+In the ```run-all-tests.js``` file, specify which browser to run:
    ````
    ...
-   # browsers to run tests on
-   browsers = ["chrome", "edge"]
+   await runTests('chrome');
+   await runTests('edge');
    ...
    ````
 This will run all tests inside ```cypress/e2e``` directory, on all browsers specified.
