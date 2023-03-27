@@ -4,3 +4,4 @@ node_modules
 TestSuit.py
 /cypress/videos
 /cypress/reports
+/cypress/screenshots
