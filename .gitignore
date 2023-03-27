@@ -2,3 +2,5 @@
 env
 node_modules
 TestSuit.py
+/cypress/videos
+/cypress/reports
