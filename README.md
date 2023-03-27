@@ -16,7 +16,7 @@ Additionally, this project will allow the team to test the web application on di
 ### Built With
 The following frameworks/languages/libraries are used to bootstrap this project.
 
-[![Cypress][Cypress]][Cypress-url] [![JavaScript][JavaScript]][JavaScript-url] [![Python][Python]][Python-url] [![HTML][HTML]][HTML-url]
+[![Cypress][Cypress]][Cypress-url] [![JavaScript][JavaScript]][JavaScript-url] [![HTML][HTML]][HTML-url]
 
 
 ## Getting Started
@@ -166,7 +166,5 @@ This will run all tests inside ```cypress/e2e``` directory, on all browsers spec
 [Cypress-url]: https://www.cypress.io/
 [JavaScript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=yellow&labelColor=black&color=black
 [JavaScript-url]: https://www.w3schools.com/js/
-[Python]: https://img.shields.io/badge/Python-4B8BBE?style=for-the-badge&logo=python&logoColor=blue&labelColor=black&color=black
-[Python-url]: https://www.python.org/
 [HTML]: https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=orange&labelColor=black&color=black
 [HTML-url]: https://www.w3schools.com/html/
