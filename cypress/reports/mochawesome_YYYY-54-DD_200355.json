@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-27T08:53:43.341Z",
+    "end": "2023-03-27T08:54:55.673Z",
+    "duration": 72332,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b246dcf6-405c-44d3-ae7e-ffc26546406d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\home_page.cy.js",
+      "file": "cypress\\e2e\\home_page.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a84f5735-4a3a-4bd8-b924-1263f52d5380",
+          "title": "Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Dashboard Header",
+              "fullTitle": "Home Page Dashboard Header",
+              "timedOut": null,
+              "duration": 51317,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// tc-1\ncy.get('h6:contains(\"Dashboard\")').should('have.text', 'Dashboard');\n// tc-2\ncy.get('span[class=\"oxd-userdropdown-tab\"]').should('be.visible');\n// tc-3\ncy.get('img[class=\"oxd-userdropdown-img\"]').should('be.visible');\n// tc-4\ncy.get('p[class=\"oxd-userdropdown-name\"]').should('be.visible');",
+              "err": {},
+              "uuid": "78adba52-a7b6-4a81-a66d-f64ff34bc1db",
+              "parentUUID": "a84f5735-4a3a-4bd8-b924-1263f52d5380",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Side Navbar",
+              "fullTitle": "Home Page Side Navbar",
+              "timedOut": null,
+              "duration": 10357,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// tc-5\ncy.get('nav[aria-label=\"Sidepanel\"]').should('be.visible');\n// tc-6\ncy.get('button[class=\"oxd-icon-button oxd-main-menu-button\"]').should('be.visible');\n// tc-7\ncy.get('img[alt=\"client brand banner\"]').should('be.visible');\n// tc-8\ncy.get('*[class=\"oxd-icon oxd-menu-icon\"]').should('be.visible');\n// tc-9\ncy.get('input[placeholder=\"Search\"]').should('be.visible');\n// tc-10\ncy.get(':nth-child(1) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-11\ncy.get('span:contains(\"Admin\")').should('have.text', 'Admin');\n// tc-12\ncy.get(':nth-child(2) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-13\ncy.get('span:contains(\"PIM\")').should('have.text', 'PIM');\n// tc-14\ncy.get(':nth-child(3) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-15\ncy.get('span:contains(\"Leave\")').should('have.text', 'Leave');\n// tc-16\ncy.get(':nth-child(4) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-17\ncy.get('span:contains(\"Time\")').should('have.text', 'Time');\n// tc-18\ncy.get(':nth-child(5) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-19\ncy.get('span:contains(\"Recruitment\")').should('have.text', 'Recruitment');\n// tc-20\ncy.get(':nth-child(6) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-21\ncy.get('span:contains(\"My Info\")').should('have.text', 'My Info');\n// tc-22\ncy.get(':nth-child(7) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-23\ncy.get('span:contains(\"Performance\")').should('have.text', 'Performance');\n// tc-24\ncy.get(':nth-child(8) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-25\ncy.get('span:contains(\"Dashboard\")').should('have.text', 'DashboardDashboard');\n// tc-26\ncy.get(':nth-child(9) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-27\ncy.get('span:contains(\"Directory\")').should('have.text', 'Directory');\n// tc-28\ncy.get(':nth-child(10) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-29\ncy.get('span:contains(\"Maintenance\")').should('have.text', 'Maintenance');\n// tc-30\ncy.get(':nth-child(11) > .oxd-main-menu-item > .oxd-icon').should('be.visible');\n// tc-31\ncy.get('span:contains(\"Buzz\")').should('have.text', 'Buzz');\n// tc-32\ncy.get('button[class=\"oxd-icon-button oxd-main-menu-button\"]').click();\n// tc-33\ncy.get('img[alt=\"client brand logo\"]').should('be.visible');",
+              "err": {},
+              "uuid": "5712c9dc-7b5b-43cd-8476-57b98f79f131",
+              "parentUUID": "a84f5735-4a3a-4bd8-b924-1263f52d5380",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Dashboard Page",
+              "fullTitle": "Home Page Dashboard Page",
+              "timedOut": null,
+              "duration": 10535,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// tc-34\ncy.get('p:contains(\"Time at Work\")').should('have.text', 'Time at Work');\n// tc-35\ncy.get('p:contains(\"My Actions\")').should('have.text', 'My Actions');\n// tc-36\ncy.get('p:contains(\"Quick Launch\")').should('have.text', 'Quick Launch');\n// tc-37\ncy.get('p:contains(\"Buzz Latest Posts\")').should('have.text', 'Buzz Latest Posts');\n// tc-38\ncy.get('p:contains(\"Employees on Leave Today\")').should('have.text', 'Employees on Leave Today');\n// tc-39\ncy.get('p:contains(\"Employee Distribution by Sub Unit\")').should('have.text', 'Employee Distribution by Sub Unit');\n// tc-40\ncy.get('p:contains(\"Employee Distribution by Location\")').should('have.text', 'Employee Distribution by Location');",
+              "err": {},
+              "uuid": "4e961e8b-a9a0-4f9f-ba6b-ee0c9bde5945",
+              "parentUUID": "a84f5735-4a3a-4bd8-b924-1263f52d5380",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "78adba52-a7b6-4a81-a66d-f64ff34bc1db",
+            "5712c9dc-7b5b-43cd-8476-57b98f79f131",
+            "4e961e8b-a9a0-4f9f-ba6b-ee0c9bde5945"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 72209,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "YYYY-MM-DD HH:mm:ss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
