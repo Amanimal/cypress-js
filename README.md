@@ -95,49 +95,6 @@ Use the information below to learn how to run this project.
 * Cypress does not support running tests on Safari.
 * Cypress does not support Firefox or Opera out of the box, but plugins can be installed to enable running tests on these browsers.
 
-5. Run tests on Firefox or Opera <br>
-    a. Install the plugins:
-      ````
-      npm install --save-dev cypress-browser-launcher
-      npm install --save-dev cypress-browser-opera
-      ````
-   b. Add the following code to ```cypress/plugins/index.js``` file:
-      ````
-      const browserLauncher = require('cypress-browser-launcher')
-
-      module.exports = (on, config) => {
-        on('before:browser:launch', (browser, launchOptions) => {
-          if (browser.name === 'firefox') {
-            return browserLauncher.detect().then((launchers) => {
-              const launcher = launchers.find((l) => l.name === 'Firefox')
-              if (!launcher) {
-                throw new Error('Cannot find Firefox browser')
-              }
-              return launcher
-            })
-          }
-        })
-      }
-      ````
-      ````
-      const { launch } = require('cypress-browser-opera')
-
-      module.exports = (on, config) => {
-        on('before:browser:launch', (browser, launchOptions) => {
-          if (browser.name === 'opera') {
-            return launch(config, {
-              headless: true
-            })
-          }
-        })
-      }
-    ````
-   c. Run tests using ```--browser``` flag with ```firefox``` or ```opera```:
-   ````
-   cypress run --browser firefox
-   cypress run --browser opera
-   ````
-
 ### Option 3: Run the Test Suite
 
 Run the test suite, using terminal:
