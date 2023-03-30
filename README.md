@@ -37,12 +37,12 @@ Here gives you instructions on setting up your project locally.
    ````
 4. Ensure the project contains the following directories/files:
    
-   a. Create ```\reports``` directory if unavailable, where generated reports are stored for all 
+   a. ```\reports``` directory, contains generated reports are stored for all 
    tests ran on different browsers <br/>
    b. ```\cypress\screenshots``` directory, contains screenshots of each failed test case <br/>
    c. ```\cypress\videos``` directory, contains videos of each test run 
 
-**NOTE**: Cypress run in headless mode, will automatically create ```\screenshots``` and ```\videos``` directories
+**NOTE**: Cypress run in headless mode, will automatically create ```\reports```, ```\screenshots``` and ```\videos``` directories
 
 ## Usage
 
